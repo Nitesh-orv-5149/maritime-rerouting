@@ -1,0 +1,11 @@
+monitoring_task:
+  description: "Scan the fleet telemetry registry for the ship ID {ship_id} to capture its coordinates, destination, cargo details, and any active anomalies."
+  expected_output: "A comprehensive fleet status and hazard report for the specified ship."
+
+routing_task:
+  description: "Analyze the monitoring report generated for {ship_id}, evaluate alternative maritime paths around the detected hazard, and calculate the updated ETA offsets."
+  expected_output: "A structured route amendment plan with specific coordinates and waypoint modifications."
+
+logistics_task:
+  description: "Evaluate the proposed route changes and ETA offsets against destination port backlogs, daily demurrage fees, and calculate downstream warehouse inventory safety margins."
+  expected_output: "A supply chain risk mitigation brief detailing delay implications and warehouse safety stock recommendations."
