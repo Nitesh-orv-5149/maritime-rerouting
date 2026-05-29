@@ -3,6 +3,7 @@ from crewai.tools import tool
 
 @tool("Retrieve telemetry, coordinates, cargo details, and active route hazards for a specific ship by its ID")
 def get_fleet_telemetry(ship_id: str) -> str:
+    """Retrieve telemetry, coordinates, cargo details, and active route hazards for a specific ship by its ID."""
     telemetry = {
         "Voyager-X": {
             "status": "Delayed",
@@ -26,6 +27,7 @@ def get_fleet_telemetry(ship_id: str) -> str:
 
 @tool("Retrieve backlog days, alternative berth availability, and daily demurrage fees for a destination port")
 def get_port_metrics(port_name: str) -> str:
+    """Retrieve backlog days, alternative berth availability, and daily demurrage fees for a destination port."""
     ports = {
         "Port of Rotterdam": {
             "backlog_days": 4,
